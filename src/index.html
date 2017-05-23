@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <link rel="icon" href="img/fav-icon-red.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/global.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/index.js"></script>
+</head>
+
+<body>
+    <section>
+        <div class="container-fluid wrapper">
+            <!--MM logo to be made visible in mobile view: -->
+            <div class="mentor-mentee-container-mobile">
+                <div class="row">
+                    <img src="img/mentor-mentee-logo.png" class="mentor-img img-responsive " alt="Image showing logo of Mentor Mentee" />
+                </div>
+            </div>
+            <!--.-->
+            <!--Back button for coming back to login: -->
+            <div class="row no-margin">
+                <button type="button" class="btn btn-default btn-sm back-to-login" id="back-to-login">
+                     <span class="glyphicon glyphicon-chevron-left"></span>Back to Login
+                     </button>
+            </div>
+            <!--.-->
+
+            <!--The login form: -->
+            <form class="login-form" id="login">
+
+                <!--Error messages hidden at page load: -->
+                <span class="username-error">Username Error</span>
+                <span class="password-error">password error</span>
+                <!--.-->
+
+
+                <div class="row no-margin">
+                    <input type="text" class="username col-md-3 col-sm-3 col-xs-12" id="username" placeholder="Username" autofocus required="required" />
+                    <input type="password" placeholder="Password" class="password  col-md-3 col-sm-3 col-xs-12" id="password" required="required" />
+                    <input type="submit" class="login-btn  col-md-3 col-sm-3 col-xs-12" id="login-btn" value="Login" />
+                </div>
+            </form>
+            <!--.-->
+
+
+
+            <!--The forgot password form: -->
+            <form class="forgot-password-form" id="forgot-password-form">
+
+                <!--Error for wrong username on forgot page to bge hidden at first-->
+                <span class="username-error">Username Error</span>
+                <!--.-->
+
+                <div class="row no-margin">
+                    <input type="text" class="forgot-password-username col-md-6 col-sm-6 col-xs-12 offset-md-4" id="forgot-password-username" placeholder="Username" required="required" />
+                    <input type="submit" class="login-btn  col-md-3 col-sm-3 col-xs-12" id="forgot-btn" value="Submit" />
+                </div>
+            </form>
+            <!--.-->
+
+            <!--New password sent message: -->
+            <div class="row  new-password-sent " id="new-password-sent">The new password is sent to: <span>abc@gmail.com</span></div>
+            <!--.-->
+
+
+
+
+            <!--Remember me functionality with the forget password: -->
+
+            <div class="row remember-forget" id="remember-me">
+
+                <div class="remember-container">
+                    <input class="col-md-1 col-sm-1" type="checkbox" id="remember">
+                    <span class="col-md-2 col-sm-2 no-padding">Remember Me</span>
+                </div>
+                <a href="" id="forgot-password" class="forgot-password col-md-3 col-sm-3 no-padding">Forgot Password?</a>
+            </div>
+            <!--.-->
+
+            <!--MM logo to be made visible in desktop and tablet view: -->
+
+            <div class="mentor-mentee-container">
+                <div class="row">
+                    <img src="img/mentor-mentee-logo.png" class="mentor-img img-responsive " alt="Image showing logo of Mentor Mentee" />
+                </div>
+
+            </div>
+            <!--.-->
+        </div>
+    </section>
+    <footer>
+        <img src="img/sapient-nitro.png" class="sapient-logo" alt="Image showing Sapient logo" />
+    </footer>
+    <script type="text/javascript"  src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){ emailjs.init("user_PXCDaybiU5fpeTwFuTayA"); })();
+            </script>
+</body>
+
+</html>

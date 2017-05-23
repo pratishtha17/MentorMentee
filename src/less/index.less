@@ -1,0 +1,289 @@
+@zero:0;
+@bgSize:16px;
+body {
+	  background: url('../img/background.jpg') no-repeat fixed;
+	  background-size: cover;
+}
+input {
+	&:focus {
+		outline-width: @zero;
+	}
+}
+
+
+
+
+
+.login-form,.forgot-password-form,.new-password-sent,.back-to-login{
+  margin: 250px @zero @zero 15%;
+  height: 100%;
+  .login-btn {
+	  background-color: #d82728;
+    border: 2px solid #6cb5d5;
+	  border-radius: @zero 60px 60px @zero;
+	  color: #fff;
+	  cursor: pointer;
+	  font-size: 16pt;
+	  height: 58px;
+	  width: 10%;
+}
+}
+.back-to-login{
+  margin-top:174px;
+}
+.forgot-password-form,.new-password-sent{
+   margin-top:46px;
+   margin-bottom:77px;
+}
+.new-password-sent{
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+   margin-bottom:135px;
+}
+.username-error{
+   color:#ff0000;
+   margin-left:2%;
+   visibility: hidden;
+}
+.error-show{
+    visibility: visible;
+}
+.class-hide{
+  visibility: hidden;
+}
+.display-none-class{
+  display: none;
+}
+.username,
+.password,
+.forgot-password-username {
+  background-repeat: no-repeat;
+ border: 2px solid #6cb5d5;
+    border-right: 0;
+    color: #333333;
+    font-size: 16pt;
+    height: 58px;
+    padding-left: 50px;
+  width: 19%;
+  
+}
+.forgot-password-username {
+  width: 30%;
+}
+.username,.forgot-password-username {
+  background:#fff  url(../img/username.png) left 17px top 19px no-repeat;
+    background-size:  16px 16px ;
+    border-radius: 60px 0 0 60px;
+}
+
+
+
+
+
+
+.login-form {
+	  margin: 250px @zero @zero 15%;
+.username, .password{
+    border: 2px solid #6cb5d5;
+    border-right: 0;
+    color: #333333;
+    font-size: 16pt;
+    height: 58px;
+    padding-left: 50px;
+    width: 20%;
+}
+.username{
+    background:#fff  url(../img/username.png) left 17px top 19px no-repeat;
+    background-size:  16px 16px ;
+    border-radius: 60px 0 0 60px;
+}
+.password{
+    background:#fff url(../img/password.png) left 17px top 19px no-repeat;
+    background-size:  16px 16px ;
+}
+.login-btn {
+	  background-color: #d82728;
+    border: 2px solid #6cb5d5;
+	  border-radius: @zero 60px 60px @zero;
+	  color: #fff;
+	  cursor: pointer;
+	  font-size: 16pt;
+	  height: 58px;
+	  width: 10%;
+}
+.username-error{
+   color:#ff0000;
+   margin-left: 2%;
+   visibility: hidden;
+}
+.password-error{
+   color:#ff0000;
+   margin-left:9%;
+   visibility: hidden;
+}
+}
+.remember-forget {
+	margin: 27px calc(15% - 15px);
+    input[type=checkbox] {
+	margin: 0 0 0 15%;
+  zoom: 1.6;
+	vertical-align: middle;
+  width:20px;
+  } 
+.forgot-password{
+    color: #000; 
+    width:125px;
+  } 
+}
+.login-form .error-show{
+    visibility: visible;
+}
+
+
+
+
+.mentor-mentee-container {
+	margin: 30px @zero @zero 15%;
+ .mentor-img {
+	height: 130px;
+  margin-left: 25px;
+	width: 250px;
+ }
+}
+.sapient-logo {
+	margin: 200px @zero @zero 16%;
+  height: auto;
+	width: 102px;
+
+}
+.no-margin {
+	margin: @zero;
+}
+.no-padding {
+	padding: @zero;
+}
+.mentor-mentee-container-mobile {
+	display: none;
+}
+@media (min-width: 754px) and (max-width:991px) {
+.login-form{
+     .username {
+    font-size: 14pt;
+    width: 25%;
+   }
+  .password {
+    font-size: 14pt;
+    width: 25%;
+   }
+  .login-btn {
+    font-size: 14pt;
+    width: 15%;
+  }
+}
+.forgot-password-form {
+  .forgot-password-username{
+    font-size: 14pt;
+    width: 25%;
+    
+  }
+  .login-btn {
+    font-size: 14pt;
+    width: 15%;
+  }
+}
+  .remember-forget {
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width:753px) {
+  .mentor-mentee-container {
+    display: none;
+  }
+  .mentor-mentee-container-mobile {
+    display: block;
+    margin: 15% auto 15% auto;
+       .mentor-img {
+    margin: auto;
+    // height: 74px;
+    // width: 143px;
+    width:55%;
+  }
+  }
+
+  .login-form {
+    margin: 0;
+     
+  .username {
+    border: 2px solid #6cb5d5;
+    border-radius: 15px;
+    margin:0 0 6px 10%;
+    width: 80%;
+  }
+  .password {
+    border: 2px solid #6cb5d5;
+    border-radius: 15px;
+    margin:0 0 45px 10%;
+    width: 80%;
+  }
+  .login-btn {
+    border-radius: 15px;
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  .username-error{
+   margin-left: 13%;
+}
+.password-error{
+   margin-left:9%;
+   display: none;
+}
+  }
+  .remember-forget {
+   margin-top: 10%;
+   .remember-container{
+     padding-bottom: 3%;
+   }
+   input[type=checkbox] {
+	margin: 0 0 0 25%;
+ 
+  } 
+.forgot-password{
+    margin-left: 30%; 
+  } 
+}
+.back-to-login{
+  margin-top: 0;
+}
+.forgot-password-form {
+margin-left: 0;
+  .forgot-password-username{
+    width: 80%;
+     border: 2px solid #6cb5d5;
+    border-radius: 15px;
+    margin-left: 10%;
+    
+  }
+  .login-btn {
+    border-radius: 15px;
+    width: 80%;
+    margin:25px auto auto 10% ; 
+  }
+   .username-error{
+   margin-left: 13%;
+}
+}
+  .sapient-logo {
+    bottom: 3%;
+    display: block;
+    margin: 0 auto auto 36.5%;
+    position: fixed;
+    width:25%;
+  }
+}
+@media screen and (max-height:530px) {
+	.sapient-logo {
+		position: static;
+	}
+}
+

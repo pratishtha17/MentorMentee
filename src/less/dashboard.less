@@ -1,0 +1,461 @@
+@containerMarginHorizontal:12.5%;
+@containerMarginVerticalDesktop:20px;
+@containerWidthDesktop:75%;
+@containerBorderRadiusDesktop:25px;
+@headerHeightDesktop:70px;
+@searchBarFont:20px;
+@searchBarHeightMobile:40px;
+
+.ovride-btstrp-padding{
+        height: 100%;
+        padding: 0;
+}
+.container-fluid{
+    padding: 0;
+}
+.container-div{
+   margin: auto;
+    margin-top : @containerMarginVerticalDesktop ;
+    width: @containerWidthDesktop;
+}
+.header-height{
+    height: @headerHeightDesktop;
+}
+.header-display-type{
+    display: flex;
+}
+.header-leftmost-div{
+    background-color: #d12728;
+    border-radius: @containerBorderRadiusDesktop 0 0 0;
+    order: 1;
+}
+.search-div{
+    order:2;
+}
+.header-rightmost-div{
+    border-radius: 0 @containerBorderRadiusDesktop  0 0;
+    background-color: #e4e3e3;
+    color: #333333;
+    font-size: 16px;
+    order: 3;
+}
+.logo-header{
+    left:  50%;
+    position: absolute;
+	top:  50%;
+	transform: translate(-50%,-50%);
+	width: 15px;
+}
+.supervisor-pic{
+    height: 45px;
+    margin-top: 7.5px;
+    width: 45px;
+}
+
+.search-bar{
+    border:none;
+    color: #333333;
+    font-size: @searchBarFont;
+    height: 100%;
+    padding-left: 28px;
+    width: 100%;
+}
+.search-icon{
+    bottom: 25px;
+    height: 20px;
+    position: absolute;
+    right: 25px;
+    top:25px;
+    width: 20px;
+}
+.header-profile-icon{
+  float: right;
+  margin-right:2%;
+}
+.header-pic-div{
+    padding-top: 15px;
+}
+
+.header-username{
+      font-family: 'HelveticaNeueLT Std Lt';   
+}
+.header-username-div{
+    padding-top: 25px;
+}
+.header-username-span{
+     font-size: 16px;
+  }
+.dropdown-toggle-icon{
+    height: 6px;
+    width: 13px;
+    margin-left: 20px; 
+}
+.header-dropdown{
+    background-color:#e4e3e3;
+    font-family: 'HelveticaNeueLT Std Lt';
+    opacity: 0.9;
+    position: absolute; 
+    right: 30px;
+    text-align: center;
+    top: 70px;
+    width:150px;
+    z-index: 1;
+}
+.header-list-items{
+    justify-content: center;
+    list-style: none;
+    margin:5px;
+}
+.header-anchors{
+    color:inherit;
+    text-decoration: none;
+}
+.header-anchors:hover{
+    color:#414141;
+    text-decoration: none;
+}
+.dropdown-icons{
+    height: 25px;
+    padding-top: 3px;
+    width: 25px;
+}
+.row-margin{
+    margin: auto 25px; 
+}
+.add-supervisor-btn{
+    background-color: #d52728;
+    border-radius: 30px;
+    height: 48px;
+    margin: auto 20px auto 20px;
+    width: 60%;
+}
+.btn-container{
+    margin-top: 15px;
+    text-align: center;
+}
+.div-align {
+  margin-top: 10px;
+}
+.div-height{
+    text-align: center;
+}
+.fa-pencil,.fa-trash{
+    color: #858585;
+    margin: auto;
+}
+.profile{
+    background: linear-gradient(rgb(83,83,83) 75%, rgb(41,41,41));
+    height:704px;
+}
+.supervisor-list{
+    background-color: #333333;
+    height: 704px;
+}
+.supervisee-list{
+    background-color: #414141;
+    height: 704px;
+}
+.supervisor-border{
+    border-bottom:1px solid #565656;
+    padding: 10px;
+}
+.sup-div-height{
+    height: 80px;
+}
+.div-margin{
+    margin-left: 15px;
+}
+.div-spacing{
+    margin-top:10px;
+}
+.list-heading{
+    display: block;
+    font-family: 'HelveticaNeueLT Std UltLt';
+    font-size: 24px;
+    margin: 20px 0 0 30px;
+    text-align: left;
+}
+.supervisor-list-heading-drag{
+    margin-top: 5px;
+}
+.list{
+    margin-top: 30px;
+}
+.selection{
+    background-color: #d6d6d6;
+    border-radius: 25px;
+    color: #000000;
+    height: 60px;
+}
+.selection-t{
+    background-color: #d6d6d6;
+    border-radius: 25px;
+    color: #000000;
+    height: 60px;
+}
+.btn-text{
+    font-family: 'HelveticaNeueLT Std Lt';
+    font-size: 16px;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+.btn-plus{
+    font-family: 'HelveticaNeueLT Std UltLt';
+    font-size: 24px;
+}
+.icons{
+    height: 26px;
+    margin-right: 6px;
+    margin-top: 16px;
+    cursor:pointer;
+    // width: 26px;
+}
+.display{
+    display: block;
+}
+.display-important{
+    display: block !important;
+}
+.supervisor-1,.supervisor-2{
+    height: 322px;
+}
+.list-scroll{
+    height: 270px;
+    overflow-y: scroll;
+}
+.split{
+    background: #e4e3e3;
+    height: 3px;
+    text-align: center;
+}
+.split p{
+    color: #000;
+    margin: 0;
+    line-height: 0.2;
+    text-align: center;
+}
+.btn-primary{
+     background-color: #d52728;
+     border-color: #ac2925;
+    &:hover{
+        background-color: #c9302c;
+        border-color: #ac2925;
+    }
+}
+.checkbox>span{   
+    font-family: 'HelveticaLT Std Roman';
+    font-size: 14px;
+    margin-left: 10%;
+} 
+.cancel-btn,.save-btn{
+    border-radius: 30px;
+    background-color: #d52728;
+    float: right;
+    margin:0;
+    margin-right: 5%;
+    .btn-text{
+        margin: 0;
+    }
+}
+.float-right{
+    float: right;
+}
+.sup-list-del-btn{
+    margin: 20px 0 0 auto;
+}
+.back-button{
+    display: none;
+}
+.header-mobile{
+    display:none;
+}
+.sup-list-del-btn{
+        margin-left: 6%;
+    }
+.btn-disabled{
+    color: #737373;
+}
+.table-data{
+        padding: 5px;
+        vertical-align: bottom;
+}
+.supervisee-list-heading{
+    margin-left: 10%;
+}
+.info-hover{
+    cursor: pointer;
+}
+.glyphicon-chevron-right{
+margin-top: 21px;
+}
+.header-username-div{
+    cursor: pointer;
+}
+.visibility-hidden{
+    visibility: hidden;
+}
+.select-supervisor{
+    display: none;
+}
+
+.emp-name{
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} 
+
+@media screen and (max-width:767px){
+    .supervisee-heading{
+        margin-left: 4%;
+    }
+    .supervisor-list,.supervisee-list {
+        height: 580px;
+    }
+    .header-mobile{
+        display: block;
+    }
+    .header-desktop{
+        display: none;
+    }
+    .sup-list-del-btn{
+        margin: 3px 0 0 0;
+    }
+    .list-heading{
+        font-size: 18px;
+        margin-top: 16px;
+    }
+    
+    .header-display-type{
+        display: block;
+    }
+    .display{
+        display: inline-block;
+    }
+    .search-div{
+        order:3;
+    }
+    .curved-border-right{
+        order:2;
+    }
+    .header-rightmost-div,.header-leftmost-div{
+        border-radius:0; 
+    }
+    .checkbox{
+        margin-top: 40px;
+    }
+    .back-button {
+        display: block;
+        border-radius: 20px;
+        border: 1.5px solid #666666;
+        color: #c9c9c9;
+        display: block;
+        flex-grow: 8;
+        font-size: 1.2em;
+        text-align: center;
+        text-decoration: none;
+        width: 15%;
+        margin: 19px 0 0 9%;
+    }
+    .supervisee-list{
+         display: none;
+    }
+
+    .container-fluid{
+        margin: 0;
+       padding: 0;
+    }
+    .container-div{
+       margin: 0;
+       width: 100%;
+    }
+    .header-dropdown{
+        opacity: 1;
+        right: 0;
+        top:50px;
+    }
+    .header-height{
+        height: 60px;
+    }
+    .search-div{
+        height: @searchBarHeightMobile;
+    }
+    .search-icon{
+        top:10px;
+        right: 20px;
+    }
+    .supervisor-pic{
+        height: 36px;
+    }
+    .dropdown-toggle-icon{
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    .header-username-div{
+        padding-top: 20px;
+    }
+    .profile-pic{
+        height: 100%;
+        width: 100%;
+    }
+    .profile{
+        height: 210px;
+    }
+    .div-spacing{
+        margin-top: 5px;
+    }
+    .header-height{
+        height: 50px;
+    }
+    .list-heading{
+        display: flex;
+        margin-top: 19px;
+    }
+    .div-height{
+        height: 0;
+   }
+    .dropdown-img{
+       height: 25px;
+       width:25px;
+   }
+   .profile-pic-div{
+       height: 100%;
+   }
+   .mobile-height{
+       height: 100%;
+   }
+   .row-margin {
+    margin: auto 12px;
+    }
+.btn-container{
+    text-align: center;
+    margin-top: 15px;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+    .container-div{
+        width: 80%;
+    }
+}
+@media screen and (max-width:1100px){
+    .add-supervisor-btn{
+        width: 68%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    .container-div{
+        width: 98%;
+    }
+     .add-supervisor-btn{
+        width: 75%;
+        margin: 16px 5px;
+    }
+    .btn-container{
+        margin: 15px 5px;
+    }
+    .row-margin{
+        margin: auto 10px;
+    }
+}
+
+

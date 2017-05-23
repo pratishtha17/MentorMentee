@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Intro</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="scripts/global.js"></script>
+
+    <!--<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+    <script src="scripts/jquery.min.js"></script>
+    <script type="text/javascript">
+        // var loginData = { attribute: { userName: "asark5", password: "qwerty" } };
+
+        // db.login(loginData, function (data) {
+        //     console.log(data);
+        // });  
+        // db.accessData('getDataByAttribute', "login", { attribute: { id: 100019 } }, function (data) {console.log(data)
+        //   db.logout(function(data){console.log(data)
+        // db.accessData('getDataByAttribute','login',{ attribute: { id: 100019 }},function(data){
+        //     console.log(data);
+        // },function(err){
+        //     console.log(err)
+        // })  
+        // },function(err){console.log(err)});
+        // },
+        // function (err) {console.log(err)}
+        // );
+
+        // var userName = { data: { userName: "vispoo21" } };
+        // db.forgotPass(userName, function (data) {
+        //     console.log(data);
+        // }, function (data) {
+        //     console.log(data);
+        // });
+
+        var data = {
+            data: {
+                id: 100017,
+                supList: [100049, 100048, 100047, 100050]
+            }
+        }
+        db.assignSupervisees(data, function(data) {
+            console.log(data);
+        }, function(data) {
+            console.log(data);
+        });
+        // var dataO = {
+        //     userName: 'asark5',
+        //     password: 'qwerty',
+        //     id: 100099,
+        //     sessionId: ''
+        // };
+        // db.accessData('getData', "supervisor", {}, function (data) {
+        //     // console.log(data);
+        // }, function (err) {
+        //     console.log(err)
+        // })
+    </script>
+
+</head>
+
+<body>
+    <!--<form action="http://10.150.222.28:2020/api/uploadImage" method='post' encType="multipart/form-data">-->
+    <form encType="multipart/form-data">
+        <input type="file" name="editprofile" id="file-input" value="select">
+        <input type='button' value='Upload!' id="upload" />
+        <input type="button" id="u" value="fetch data">
+    </form>
+</body>
+<script>
+    $('#upload').click(function() {
+        var file_data = $("#file-input").prop("files")[0];
+
+        db.uploadImage(100003, file_data, 'supervisee', function(data) {
+            console.log('success');
+        }, function(err) {
+            console.log(err);
+        })
+
+    })
+
+    $('#u').click(function() {
+            db.accessData('getDataByAttribute', 'supervisee', {
+                attribute: {
+                    id: 100003
+                }
+            }, function(data) {
+                console.log(data)
+            }, function(err) {
+                console.log(err)
+            })
+        })
+        // $('#upload').click(function () {
+        //     var file_data = $("#editprofile").prop("files")[0];   // Getting the properties of file from file field
+        //     var form_data = new FormData();                  // Creating object of FormData class
+        //     form_data.append("file_name", file_data)              // Appending parameter named file with properties of file_field to form_data
+        //     // form_data.append("user_id", 123)                 // Adding extra parameters to form_data
+        //     $.ajax({
+        //         url: "http://10.150.222.28:2020/api/uploadImage",
+        //         dataType: 'json',
+        //         cache: false,
+        //         contentType: false,
+        //         processData: false,
+        //         data: form_data,                         // Setting the data attribute of ajax with file_data
+        //         type: 'POST'
+        //     })
+        // })
+</script>
+
+</html>

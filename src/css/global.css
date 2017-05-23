@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'HelveticaNeueLT Std Lt';
+  src: url('../fonts/HelveticaNeueLTStd-Lt.otf');
+}
+@font-face {
+  font-family: 'HelveticaNeueLT Std UltLt';
+  src: url('../fonts/HelveticaNeueLTStd-UltLt.otf');
+}
+@font-face {
+  font-family: 'HelveticaNeueLT Std Th';
+  src: url('../fonts/HelveticaNeueLTStd-Th.otf');
+}
+@font-face {
+  font-family: 'HelveticaLT Std Roman';
+  src: url('../fonts/HelveticaLTStd-Roman.otf');
+}
+.no-margin {
+  margin: 0;
+}
+.no-padding {
+  padding: 0;
+}
+body {
+  background: url('../img/background.png');
+  background-size: cover;
+  color: #ffffff;
+  font-family: 'HelveticaNeueLTStdThin';
+}
+.image {
+  height: 60px;
+}
+.display-flex {
+  display: flex;
+}
+.profile-heading {
+  font-family: 'HelveticaNeueLT Std Th';
+  font-size: 14px;
+  color: #d3d3d3;
+}
+.profile-div {
+  margin: 14px 0 0 25px;
+}
+.profile-info {
+  font-family: 'HelveticaNeueLT Std Lt';
+  font-weight: bold;
+  font-size: 14px;
+}
+.profile-name {
+  font-family: 'HelveticaNeueLT Std Th';
+  font-size: 21px;
+  margin: 24.5px 0 0 25px;
+}
+.plus-icon {
+  margin-left: 30px;
+}
+.emp-name {
+  font-family: 'HelveticaLT Std Roman';
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.emp-id {
+  font-family: 'HelveticaNeueLT Std UltLt';
+  font-size: 14px;
+  color: #999999;
+  margin-bottom: 0;
+}
+.glyphicon {
+  cursor: pointer;
+}
+.scroll {
+  overflow-y: auto;
+}
+.scroll::-webkit-scrollbar {
+  width: 10px;
+}
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+}
+.scroll:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
